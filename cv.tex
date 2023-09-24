@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Date: 11 January 2021
+%
+% Author of this template:
+% Christian Haller (mail@christianhaller.me)
+% This template has been downloaded from:
+% https://github.com/ChristianHallerX/PhD_Resume_and_CoverLetter_Template
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+% Heavy modifications by
+% Jesper Dramsch (jesper@dramsch.net)
+% https://github.com/JesperDramsch/friggeri-cv-boosted
+%
+% Author of Letter Template:
+% Jesper Dramsch (jesper@dramsch.net)
+% https://github.com/JesperDramsch/friggeri-cv-boosted
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{.head}
+\documentclass[Nunito,custcol]{friggeri-cv}                                       % Pass options to .cls in brackets. Example: [roboto,nocolors]
+
+\addbibresource{bibliography.bib}                                                 % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Maya}{Segal, Ph.D. Candidate}{Biophysicist\space\space|\space\space Data Scientist}  % plug in your name and current title(s)
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION (page 1)                                                      % In the sidebar, each new line forces a line break
+%----------------------------------------------------------------------------------------
+\begin{asidep1}
+\section{Contact}\vspace{2 mm}
+8109 Sunnybrae Ave. 
+Winnetka, CA 91306
+USA \faMapMarker
++1 (310) 596 0470 \faPhone\\                                                      % plug in your phone number
+\href{mailto:mayasegala@gmail.com}{mayasegala@gmail.com}\vspace{2 mm}
+%\href{mailto:mayasegala@gmail.com}{mayasegala@gmail.com \faEnvelope}\\\vspace{2 mm}       % plug in your email address
+\section{Profiles}\vspace{2 mm}
+\href{https://www.linkedin.com/in/maya-segal-6a17ba16a}{LinkedIn \faLinkedin}\\                          % plug in your LinkedIn profile
+\href{https://github.com/mayeshh?tab=repositories}{GitHub \faGithub}\\                                    % plug in your GitHub profile
+\href{https://www.researchgate.net/profile/Maya-Segal}{ResearchGate \faUniversity}\\\vspace{2 mm}     % plug in your ResearchGate or Google Scholar Profile
+\section{Programming}\vspace{2 mm}
+Python, Unix, SQL, git, \LaTeX
+%\vspace{2 mm}
+\section{Skill Highlights}\vspace{2 mm}
+Molecular biology
+Biochemistry
+Spectroscopy
+Microscopy
+Assay Development
+Workflow Optimization
+Data Wrangling
+Data Visualization
+Statistical Analysis
+Documentation 
+Version Control
+\end{asidep1}
+
+%----------------------------------------------------------------------------------------
+%	PROFILE SECTION
+%----------------------------------------------------------------------------------------
+\input{sections/profile.tex}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION                                                      % Do not exceed page 1 with this section
+%----------------------------------------------------------------------------------------
+\input{sections/experience.tex}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-5 mm}
+\input{sections/education.tex}
+\clearpage
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION (page 2)                                                     % In the sidebar, each new line forces a line break
+%----------------------------------------------------------------------------------------
+\begin{asidep2}
+\section{Software Skills}\vspace{2 mm}
+Microsoft 365
+Adobe Suite
+Python
+Anaconda
+Jupyter Notebooks
+VS Code 
+FIJI (Image-J)
+PyMol
+%\vspace{2 mm}
+\section{Interpersonal Skills}\vspace{2 mm}
+Reliable
+Resourceful
+Adaptable
+Punctual
+Team player
+Detail oriented
+Thoughtful
+Inclusive
+Organized
+%\vspace{2 mm}
+\section{Languages}
+\begin{tabular}{r r}
+Hebrew&\score{3}
+Spanish&\score{1}
+\end{tabular}\vspace{2 mm}
+\section{Leadership}\vspace{2 mm}
+Joint Research Safety Initiative \faUsers
+\href{https://sites.google.com/chem.ucla.edu/jrsi/home}{Co-Founder, ex-President}
+% \href{http://examplepage1.org/}{@LARPCON'20}
+% \href{http://examplepage2.org/}{Treasurer}
+% \href{http://examplepage2.org/}{@LARP Chapter, Town}\vspace{2 mm}
+% \href{http://examplepage3.org/}{Spicy Noodle Committee \faUsers}
+% \href{http://examplepage3.org/}{@YMCA, Town'16\textendash now}
+\end{asidep2}
+
+%----------------------------------------------------------------------------------------
+%	Projects SECTION
+%----------------------------------------------------------------------------------------
+%\input{sections/projects.tex}
+%\vspace{4 mm}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+%\input{sections/certifications.tex}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION (biber config required)
+%----------------------------------------------------------------------------------------
+\input{sections/publications.tex}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\input{sections/awards.tex}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%\input{sections/communication.tex}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTARY ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+\input{sections/volunteer.tex}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\input{sections/interest.tex}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES SECTION
+%----------------------------------------------------------------------------------------
+\input{sections/references.tex}
+
+\end{document}
